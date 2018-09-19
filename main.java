@@ -55,6 +55,8 @@ public class Siloed{
 
         double pi = 3.141592653;
 
+        double usage = 65;
+
         double towerVolume1 = pi*towerHeight1*(towerDiameter1/2.0);
 
         double towerVolume2 = pi*towerHeight2*(towerDiameter2/2.0);
@@ -85,7 +87,8 @@ public class Siloed{
 
         double waterForTime = waterPerPerson/days;
 
-        System.out.printf("You can only use ~%.2f",(waterForTime * 264.172));
+        System.out.printf("You need to save ~%.2f", (usage-(waterForTime * 264.172)));
         System.out.print(" gallons of water daily in order for it to last "+ days+ " days.\n");
     }
 }
+
