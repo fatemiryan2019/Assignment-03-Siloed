@@ -88,6 +88,6 @@ public class Siloed{
         double waterForTime = waterPerPerson/days;
 
         System.out.printf("Every person in the town needs to save ~%.5f", (usage-waterForTime));
-        System.out.print(" gallons of water daily in order for it to last "+ days+ " days.\n");
+        System.out.print(" cubic meters of water daily in order for it to last "+ days+ " days.\n");
     }
 }
